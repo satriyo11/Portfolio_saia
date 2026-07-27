@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satriyo Priyo Widjaksono — UI/UX & Presentation Designer</title>
+<meta name="description" content="Portfolio profesional Satriyo Priyo Widjaksono — Mahasiswa Teknik Informatika Universitas Muria Kudus, UI Designer, PowerPoint Designer, dan Public Speaker.">
+<meta name="keywords" content="Satriyo Priyo Widjaksono, UI Designer, PowerPoint Designer, Portfolio, Universitas Muria Kudus, Teknik Informatika">
+<meta name="author" content="Satriyo Priyo Widjaksono">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Satriyo Priyo Widjaksono — UI/UX & Presentation Designer">
+<meta property="og:description" content="Portfolio profesional: UI Design, PowerPoint Design, dan Public Speaking.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+<!-- Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-logo">SPW</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header id="navbar">
+  <nav class="nav-container">
+    <a href="#home" class="nav-logo">SPW<span class="dot">.</span></a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#organization" class="nav-link" data-section="organization">Organization</a></li>
+      <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+
+    <button id="hamburger" class="hamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile menu overlay -->
+<div id="mobileMenu" class="mobile-menu">
+  <ul>
+    <li><a href="#home" class="mobile-link">Home</a></li>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#education" class="mobile-link">Education</a></li>
+    <li><a href="#skills" class="mobile-link">Skills</a></li>
+    <li><a href="#organization" class="mobile-link">Organization</a></li>
+    <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+  </ul>
+</div>
+
+<main>
+
+<!-- ============ HERO SECTION ============ -->
+<section id="home" class="hero">
+  <div class="aurora-bg" aria-hidden="true">
+    <div class="aurora-shape shape-1"></div>
+    <div class="aurora-shape shape-2"></div>
+    <div class="aurora-shape shape-3"></div>
+  </div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <div class="floating-shapes" aria-hidden="true">
+    <span class="fshape f1"></span>
+    <span class="fshape f2"></span>
+    <span class="fshape f3"></span>
+    <span class="fshape f4"></span>
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-text" data-parallax="0.02">
+      <p class="hero-eyebrow reveal">Halo cuyy😹, kenalin akuu</p>
+      <h1 class="hero-title reveal">SATRIYO PRIYO <span class="gradient-text">WIDJAKSONO</span></h1>
+      <p class="hero-subtitle reveal">seorang NPC biasa</p>
+      <p class="hero-university reveal">Universitas Muria Kudus</p>
+
+      <div class="typing-wrap reveal">
+        <span>Saya seorang </span><span id="typing-text" class="gradient-text"></span><span class="typing-cursor">|</span>
+      </div>
+
+      <div class="hero-buttons reveal">
+        <a href="portfolio/CV.jpeg" download class="btn btn-primary ripple">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+        <a href="#contact" class="btn btn-outline ripple">
+          <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-illustration reveal" data-parallax="0.04">
+      <div class="illustration-glow"></div>
+      <img src="assets/img/1.jpg" alt="Ilustrasi programmer modern bekerja dengan laptop" class="floating-card">
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" aria-label="Gulir ke bawah">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- ============ ABOUT SECTION ============ -->
+<section id="about" class="section about">
+  <div class="container">
+    <p class="section-eyebrow reveal">Kenali Saya Lebih Dekat cikk</p>
+    <h2 class="section-title reveal">Tentang Saya</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Saya adalah mahasiswa Teknik Informatika Universitas Muria Kudus yang memiliki minat dalam bidang desain presentasi profesional, public speaking, organisasi, dan teknologi informasi.</p>
+        <p>Yaa, meski ga terlalu maksimal bakatku cmn jaga-jaga aja klo ada tugas cikk. xixi😹</p>
+      </div>
+
+      <div class="glass-card about-card reveal">
+        <div class="about-item">
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <span class="about-label">Nama</span>
+            <span class="about-value">Satriyo Priyo Widjaksono</span>
+          </div>
+        </div>
+        <div class="about-item">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <span class="about-label">Pendidikan</span>
+            <span class="about-value">Universitas Muria Kudus</span>
+          </div>
+        </div>
+        <div class="about-item">
+          <i class="fa-solid fa-code"></i>
+          <div>
+            <span class="about-label">Jurusan</span>
+            <span class="about-value">Teknik Informatika</span>
+          </div>
+        </div>
+        <div class="about-item">
+          <i class="fa-solid fa-book"></i>
+          <div>
+            <span class="about-label">Status</span>
+            <span class="about-value">Mahasiswa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION SECTION ============ -->
+<section id="education" class="section education">
+  <div class="container">
+    <p class="section-eyebrow reveal">Perjalanan Akademik</p>
+    <h2 class="section-title reveal">Riwayat Pendidikan</h2>
+
+    <div class="timeline">
+      <div class="timeline-line" aria-hidden="true"></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+        <div class="glass-card timeline-card">
+          <h3>SMA Negeri 1 Karanganyar Demak</h3>
+          <p>Jenjang Sekolah Menengah Atas</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="fa-solid fa-university"></i></div>
+        <div class="glass-card timeline-card">
+          <h3>Universitas Muria Kudus</h3>
+          <p>Perguruan Tinggi</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="glass-card timeline-card">
+          <h3>Teknik Informatika</h3>
+          <p>Program Studi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS SECTION ============ -->
+<section id="skills" class="section skills">
+  <div class="container">
+    <p class="section-eyebrow reveal">Kemampuan Saya</p>
+    <h2 class="section-title reveal">Keahlian</h2>
+
+    <div class="glass-card skills-card reveal">
+      <div class="skill-item">
+        <div class="skill-head">
+          <span><i class="fa-solid fa-display"></i> PowerPoint Designer</span>
+          <span class="skill-percent" data-target="60">0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" data-value="60"></div>
+        </div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-head">
+          <span><i class="fa-solid fa-microphone"></i> Yapping</span>
+          <span class="skill-percent" data-target="64">0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" data-value="64"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POWERPOINT SHOWCASE ============ -->
+<section id="ppt-showcase" class="section ppt-showcase">
+  <div class="container">
+    <p class="section-eyebrow reveal">Karya Desain Presentasi</p>
+    <h2 class="section-title reveal">Contoh Desain PowerPoint</h2>
+
+    <div class="ppt-grid">
+      <article class="ppt-card reveal" data-video="assets/ppt/video-3.mp4" data-title="formalitas" data-desc="kalau ada acara formal atau resmi, bisa pake ini">
+        <div class="ppt-thumb">
+          <img data-src="assets/ppt/foto-3.png" src="" alt="Thumbnail Company Profile Deck" loading="lazy" class="lazy-img">
+          <span class="ppt-badge">PowerPoint Animation</span>
+          <button class="play-btn" aria-label="Putar preview Company Profile Deck">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="ppt-info">
+          <h3>Formalitas</h3>
+          <p>kalau ada acara formal atau resmi, bisa pake ini</p>
+          <span class="ppt-duration"><i class="fa-regular fa-clock"></i> 00:25</span>
+        </div>
+      </article>
+
+      <article class="ppt-card reveal" data-video="assets/ppt/video-2.mp4" data-title="Desain Anime" data-desc="Biar sangarr, dan biar (keren bet dah gw xixi.)">
+        <div class="ppt-thumb">
+          <img data-src="assets/ppt/foto-2.png" src="" alt="Thumbnail Marketing Strategy PPT" loading="lazy" class="lazy-img">
+          <span class="ppt-badge">PowerPoint Animation</span>
+          <button class="play-btn" aria-label="Putar preview Marketing Strategy PPT">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="ppt-info">
+          <h3>Desain Anime</h3>
+          <p>Biar sangarr, dan biar "keren bet dah gw" xixi.</p>
+          <span class="ppt-duration"><i class="fa-regular fa-clock"></i> 00:42</span>
+        </div>
+      </article>
+
+      <article class="ppt-card reveal" data-video="assets/ppt/video-1.mp4" data-title="Desain politik" data-desc="HEEE, ANTEK-ANTEK ASING">
+        <div class="ppt-thumb">
+          <img data-src="assets/ppt/foto-1.png" src="" alt="Thumbnail Annual Report Design" loading="lazy" class="lazy-img">
+          <span class="ppt-badge">PowerPoint Animation</span>
+          <button class="play-btn" aria-label="Putar preview Annual Report Design">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div class="ppt-info">
+          <h3>Desain Politik</h3>
+          <p>HEEE, ANTEK-ANTEK ASING</p>
+          <span class="ppt-duration"><i class="fa-regular fa-clock"></i> 00:29</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORGANIZATION EXPERIENCE ============ -->
+<section id="organization" class="section organization">
+  <div class="container">
+    <p class="section-eyebrow reveal">Kontribusi & Kepemimpinan</p>
+    <h2 class="section-title reveal">Pengalaman Organisasi</h2>
+
+    <div class="timeline org-timeline">
+      <div class="timeline-line" aria-hidden="true"></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="fa-solid fa-users"></i></div>
+        <div class="glass-card timeline-card org-card">
+          <h3>OSIS</h3>
+          <p class="org-sub">SMA Negeri 1 Karanganyar Demak</p>
+          <div class="org-meta">
+            <span><i class="fa-regular fa-calendar"></i> 2022–2023</span>
+            <span><i class="fa-solid fa-crown"></i> Ketua OSIS</span>
+          </div>
+          <div class="gallery-grid masonry">
+            <button class="gallery-item" data-full="assets/organization/o1.jpeg" data-caption="OSIS - Dokumentasi 1"><img src="assets/organization/o1.jpeg" alt="Dokumentasi OSIS 1" loading="lazy" class="reveal-img"></button>
+            <button class="gallery-item" data-full="assets/organization/o2.jpeg" data-caption="OSIS - Dokumentasi 2"><img src="assets/organization/o2.jpeg" alt="Dokumentasi OSIS 2" loading="lazy" class="reveal-img"></button>
+            <button class="gallery-item" data-full="assets/organization/o3.jpeg" data-caption="OSIS - Dokumentasi 3"><img src="assets/organization/o3.jpeg" alt="Dokumentasi OSIS 3" loading="lazy" class="reveal-img"></button>
+            <button class="gallery-item" data-full="assets/organization/o4.jpeg" data-caption="OSIS - Dokumentasi 4"><img src="assets/organization/o4.jpeg" alt="Dokumentasi OSIS 4" loading="lazy" class="reveal-img"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="glass-card timeline-card org-card">
+          <h3>UKMF MCC</h3>
+          <p class="org-sub">Muria Computer Club</p>
+          <div class="org-meta">
+            <span><i class="fa-solid fa-briefcase"></i> Kepala Departemen Kaderisasi &amp; Eksternal</span>
+          </div>
+          <div class="gallery-grid masonry">
+            <button class="gallery-item" data-full="assets/organization/m1.jpeg" data-caption="UKMF MCC - Dokumentasi 1"><img src="assets/organization/m1.jpeg" alt="Dokumentasi MCC 1" loading="lazy" class="reveal-img"></button>
+            <button class="gallery-item" data-full="assets/organization/m2.jpeg" data-caption="UKMF MCC - Dokumentasi 2"><img src="assets/organization/m2.jpeg" alt="Dokumentasi MCC 2" loading="lazy" class="reveal-img"></button>
+            <button class="gallery-item" data-full="assets/organization/m3.JPG" data-caption="UKMF MCC - Dokumentasi 3"><img src="assets/organization/m3.JPG" alt="Dokumentasi MCC 3" loading="lazy" class="reveal-img"></button>
+            <button class="gallery-item" data-full="assets/organization/M4.JPG" data-caption="UKMF MCC - Dokumentasi 4"><img src="assets/organization/M4.JPG" alt="Dokumentasi MCC 4" loading="lazy" class="reveal-img"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTIVITY DOCUMENTATION ============ -->
+<section id="activity" class="section activity">
+  <div class="container">
+    <p class="section-eyebrow reveal">Gambar random</p>
+    <h2 class="section-title reveal">Bisa di Skip</h2>
+    <p class="section-desc reveal">Kumpulan gambar ga tau ngapain aku pajang hehe</p>
+
+    <div class="activity-grid">
+      <button class="activity-item reveal gallery-item" data-full="assets/activity/s1.jpeg" data-caption="Penyimpanan Penuh" data-group="activity">
+        <img src="assets/activity/s1.jpeg" alt="Dokumentasi kegiatan Seminar" loading="lazy" class="reveal-img">
+        <span class="activity-caption">Penyimpanan Penuh</span>
+      </button>
+      <button class="activity-item reveal gallery-item" data-full="assets/activity/s2.jpeg" data-caption="Meninggalkan Jejak" data-group="activity">
+        <img src="assets/activity/s2.jpeg" alt="Dokumentasi kegiatan Workshop" loading="lazy" class="reveal-img">
+        <span class="activity-caption">Meninggalkan Jejak</span>
+      </button>
+      <button class="activity-item reveal gallery-item" data-full="assets/activity/s3.jpeg" data-caption="brooklyn cabang lamongan" data-group="activity">
+        <img src="assets/activity/s3.jpeg" alt="Dokumentasi kegiatan Kepanitiaan" loading="lazy" class="reveal-img">
+        <span class="activity-caption">brooklyn cabang lamongan</span>
+      </button>
+      <button class="activity-item reveal gallery-item" data-full="assets/activity/s4.jpeg" data-caption="Mari Sekolah" data-group="activity">
+        <img src="assets/activity/s4.jpeg" alt="Dokumentasi kegiatan Pelatihan" loading="lazy" class="reveal-img">
+        <span class="activity-caption">Mari Sekolah</span>
+      </button>
+      <button class="activity-item reveal gallery-item" data-full="assets/activity/s5.jpg" data-caption="Mbah Kakung" data-group="activity">
+        <img src="assets/activity/s5.jpg" alt="Dokumentasi kegiatan Kompetisi" loading="lazy" class="reveal-img">
+        <span class="activity-caption">Mbah Kakung</span>
+      </button>
+      <button class="activity-item reveal gallery-item" data-full="assets/activity/s6.jpg" data-caption="Tulalit" data-group="activity">
+        <img src="assets/activity/s6.jpg" alt="Dokumentasi kegiatan Bakti Sosial" loading="lazy" class="reveal-img">
+        <span class="activity-caption">Tulalit</span>
+      </button>
+      <button class="activity-item reveal gallery-item" data-full="assets/activity/s7.jpg" data-caption="cukurukuk" data-group="activity">
+        <img src="assets/activity/s7.jpg" alt="Dokumentasi Kegiatan Kampus" loading="lazy" class="reveal-img">
+        <span class="activity-caption">cukurukuk</span>
+      </button>
+      <button class="activity-item reveal gallery-item" data-full="assets/activity/s8.jpg" data-caption="😹" data-group="activity">
+        <img src="assets/activity/s8.jpg" alt="Dokumentasi Lainnya" loading="lazy" class="reveal-img">
+        <span class="activity-caption">😹</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO SECTION ============ -->
+<section id="portfolio" class="section portfolio">
+  <div class="container">
+    <p class="section-eyebrow reveal">Hasil Karya</p>
+    <h2 class="section-title reveal">Portfolio</h2>
+
+    <div class="portfolio-grid">
+      <article class="portfolio-card reveal">
+        <div class="portfolio-img">
+          <img src="assets/img/portfolio-1.jpg" alt="Website Portfolio" loading="lazy">
+          <span class="portfolio-badge">Web Development</span>
+        </div>
+        <div class="portfolio-body">
+          <h3>Website Portfolio</h3>
+          <p>(coming soon)</p>
+          <a href="#" class="portfolio-link">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="portfolio-card reveal">
+        <div class="portfolio-img">
+          <img src="assets/img/portfolio-2.jpg" alt="PowerPoint Presentation" loading="lazy">
+          <span class="portfolio-badge">Presentation</span>
+        </div>
+        <div class="portfolio-body">
+          <h3>PowerPoint Presentation</h3>
+          <p>(coming soon)</p>
+          <a href="#" class="portfolio-link">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="portfolio-card reveal">
+        <div class="portfolio-img">
+          <img src="assets/img/portfolio-3.jpg" alt="UI Design" loading="lazy">
+          <span class="portfolio-badge">UI Design</span>
+        </div>
+        <div class="portfolio-body">
+          <h3>UI Design</h3>
+          <p>(coming soon)</p>
+          <a href="#" class="portfolio-link">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="portfolio-card reveal">
+        <div class="portfolio-img">
+          <img src="assets/img/portfolio-4.jpg" alt="Landing Page" loading="lazy">
+          <span class="portfolio-badge">Landing Page</span>
+        </div>
+        <div class="portfolio-body">
+          <h3>Landing Page</h3>
+          <p>(coming soon)</p>
+          <a href="#" class="portfolio-link">Lihat Detail <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT SECTION ============ -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <p class="section-eyebrow reveal">Mari Terhubung</p>
+    <h2 class="section-title reveal">Hubungi Saya</h2>
+
+    <div class="contact-grid">
+      <form class="glass-card contact-form reveal" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary ripple full-width">
+          <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+        </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="contact-cards reveal">
+        <a href="mailto:02satriyo@gmail.com" class="glass-card contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span class="about-label">Email</span>
+            <span class="about-value">02satriyo@gmail.com</span>
+          </div>
+        </a>
+        <a class="glass-card contact-card">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <span class="about-label">WhatsApp</span>
+            <span class="about-value">coming soon</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/striyapryaa?igsh=MTNiN3oxbzAwY2llcQ==" target="_blank" rel="noopener" class="glass-card contact-card">
+          <i class="fa-brands fa-instagram"></i>
+          <div>
+            <span class="about-label">Instagram</span>
+            <span class="about-value">@striyapryaa</span>
+          </div>
+        </a>
+        <a class="glass-card contact-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <div>
+            <span class="about-label">LinkedIn</span>
+            <span class="about-value">coming soon</span>
+          </div>
+        </a>
+        <a href="https://github.com/satriyo11" target="_blank" rel="noopener" class="glass-card contact-card">
+          <i class="fa-brands fa-github"></i>
+          <div>
+            <span class="about-label">GitHub</span>
+            <span class="about-value">github.com/satriyopw</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-name">Satriyo Priyo Widjaksono</p>
+      <p class="footer-copy">&copy; 2026 All Rights Reserved</p>
+    </div>
+    <div class="footer-social">
+      <a href="mailto:02satriyo@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/striyapryaa?igsh=MTNiN3oxbzAwY2llcQ==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/satriyo11" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button id="backToTop" aria-label="Kembali ke atas">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ============ VIDEO MODAL ============ -->
+<div id="videoModal" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close="video"></div>
+  <div class="modal-content video-modal-content">
+    <button class="modal-close" data-close="video" aria-label="Tutup video"><i class="fa-solid fa-xmark"></i></button>
+    <div class="video-spinner" id="videoSpinner"><i class="fa-solid fa-spinner fa-spin"></i></div>
+    <video id="modalVideo" controls muted loop preload="metadata" playsinline></video>
+    <div class="video-modal-info">
+      <h3 id="videoModalTitle"></h3>
+      <p id="videoModalDesc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ IMAGE LIGHTBOX ============ -->
+<div id="lightbox" class="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close="lightbox"></div>
+  <div class="modal-content lightbox-content">
+    <button class="modal-close" data-close="lightbox" aria-label="Tutup gambar"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Gambar sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
+    <img id="lightboxImage" src="" alt="">
+    <button class="lightbox-nav lightbox-next" aria-label="Gambar berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
+    <p id="lightboxCaption" class="lightbox-caption"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
